@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>План сайту нумеролога</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* Темна робоча сторінка: одна колонка, секції з помаранчевими номерами, картки на однаковій сітці */
+:root{
+  --bg:#201f1d;
+  --card:#292826;
+  --line:#3b3936;
+  --text:#f4f2ee;
+  --muted:#aaa59d;
+  --accent:#e8924f;
+  --quote:#3a2a20;
+  --ok:#7fd49a;
+  --okbg:#22312a;
+  --font:'Onest',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font)}
+body{line-height:1.55;font-size:17px;-webkit-font-smoothing:antialiased}
+main{max-width:1040px;margin:0 auto;padding:56px 24px 96px}
+h1{margin:0;font-size:clamp(30px,5vw,46px);line-height:1.12;font-weight:700;letter-spacing:-.01em;text-wrap:balance}
+.byline{margin:14px 0 0;color:var(--muted);font-size:18px}
+section{margin-top:64px}
+h2{margin:0 0 22px;font-size:clamp(24px,3.4vw,30px);font-weight:700;display:flex;gap:12px;align-items:baseline;text-wrap:balance}
+h2 .n{color:var(--accent)}
+.quote{background:var(--quote);border-left:4px solid var(--accent);padding:28px 32px}
+.quote p{margin:0;font-size:clamp(19px,2.6vw,23px);font-weight:600;line-height:1.5}
+.quote .sub{margin-top:16px;font-size:16px;font-weight:400;color:var(--muted);line-height:1.6}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px 26px}
+.card h3{margin:0 0 8px;font-size:19px;font-weight:600}
+.card p{margin:0;color:var(--muted);font-size:17px}
+.list{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.row{display:grid;grid-template-columns:44px minmax(0,1fr);gap:20px;padding:24px 26px;border-top:1px solid var(--line)}
+.row:first-child{border-top:0}
+.num{width:36px;height:36px;border-radius:50%;background:#34322f;color:var(--muted);display:flex;align-items:center;justify-content:center;font-weight:600;font-size:15px}
+.row h3{margin:0 0 6px;font-size:19px;font-weight:600}
+.row p{margin:0;color:var(--muted)}
+.row b{color:var(--text);font-weight:600}
+.row .flag{display:block;margin-top:8px;font-size:15px;color:var(--accent)}
+.q{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 26px;margin-top:14px}
+.q:first-of-type{margin-top:0}
+.q h3{margin:0;font-size:19px;font-weight:600;line-height:1.4}
+.q h3 .qn{color:var(--muted);font-weight:600;margin-right:6px}
+.ans{margin:16px 0 0;padding:16px 20px;background:var(--okbg);border-radius:10px}
+.ans b{color:var(--ok);font-weight:600}
+.ans.none{background:transparent;padding:0;font-style:italic;color:var(--muted)}
+.open{margin:12px 0 0;font-size:15px;color:var(--accent)}
+.intro{margin:0 0 22px;color:var(--muted)}
+@media (max-width:700px){
+  main{padding:36px 16px 72px}
+  .grid{grid-template-columns:1fr}
+  .quote{padding:22px 20px}
+  .row{grid-template-columns:1fr;gap:12px;padding:20px}
+  .card,.q{padding:20px}
+  .ans{padding:14px 16px}
+}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1>План сайту нумеролога (чернетка)</h1>
+  <p class="byline">Наталя Барабаш · нумеролог, Матриця Долі</p>
+</header>
+
+<section aria-labelledby="s1">
+  <h2 id="s1"><span class="n">1.</span> Позиціонування</h2>
+  <div class="quote">
+    <p>Допомагаю розібратися на життєвій розвилці: розбираю ваше питання через Матрицю Долі й складаю орієнтир на рік або на період, який вас хвилює, як опору для рішень, а не вирок.</p>
+    <p class="sub">Опора для довіри: 3 роки практики, понад 100 консультацій, 4 сертифікати, відгуки зі скриншотами з месенджерів. Формат: голосовий розбір від 40 хвилин онлайн по всій Україні, за бажанням з текстовим PDF.</p>
+  </div>
+</section>
+
+<section aria-labelledby="s2">
+  <h2 id="s2"><span class="n">2.</span> Сторінки</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Головна</h3>
+      <p>За кілька секунд пояснює, з якими питаннями приходять до Наталі, і веде до формату та запису.</p>
+    </div>
+    <div class="card">
+      <h3>Консультації</h3>
+      <p>Усі формати в одному місці: прогноз на рік, відповіді на питання, розбір матриці, дитяча матриця, карта здоров'я. Для кожного ясно, що клієнт отримує.</p>
+    </div>
+    <div class="card">
+      <h3>Прогноз на рік</h3>
+      <p>Окрема сторінка під сезонний запит перед Новим роком: прогноз на рік, що починається від дати народження.</p>
+    </div>
+    <div class="card">
+      <h3>Метод</h3>
+      <p>Чесно пояснює, що таке Матриця Долі в роботі Наталі й чого вона не вміє: рішення за людину матриця не приймає.</p>
+    </div>
+    <div class="card">
+      <h3>Відгуки</h3>
+      <p>Скриншоти відгуків з месенджерів, з іменами авторів, зокрема про прогноз і про дитячу матрицю.</p>
+    </div>
+    <div class="card">
+      <h3>Про Наталю</h3>
+      <p>Її шлях до нумерології, 4 сертифікати, 3 роки практики й понад 100 консультацій. Звертання до читача на «Ви».</p>
+    </div>
+    <div class="card">
+      <h3>Запис і контакти</h3>
+      <p>Запис через месенджер або форму, умови оплати, онлайн по Україні й офлайн в Ужгороді, Instagram, Threads, TikTok.</p>
+    </div>
+    <div class="card">
+      <h3>Умови та конфіденційність</h3>
+      <p>Юридичні тексти для публічного сайту: умови надання послуг і обробка персональних даних.</p>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="s3">
+  <h2 id="s3"><span class="n">3.</span> Блоки головної сторінки</h2>
+  <div class="list">
+    <div class="row">
+      <div class="num">1</div>
+      <div>
+        <h3>Перший екран (вже зібраний)</h3>
+        <p>Заголовок, кнопки «Записатися на консультацію» і «Про метод», знизу три формати: прогноз на рік, матриця особистості, дитяча матриця. <b>Розказую:</b> хто така Наталя й з чим допомагає.</p>
+        <span class="flag">Наталя ще вирішує, лишати заголовок «Розкрийте свою Матрицю Долі» чи міняти: на сайті будуть розбори на різні запити, тож широкий заголовок може підійти.</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="num">2</div>
+      <div>
+        <h3>З якими питаннями приходять</h3>
+        <p>Дві-три картки з типовими запитами. <b>Розказую:</b> до Наталі найчастіше приходять із переїздом і фінансами, а перед Новим роком із прогнозом на наступний рік. Орієнтир потрібен у момент вибору, а рішення лишається за людиною.</p>
+        <span class="flag">Інші запити додам, якщо Наталя їх назве.</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="num">3</div>
+      <div>
+        <h3>Формати консультацій</h3>
+        <p>Картки: прогноз на рік, відповіді на питання, розбір матриці, дитяча матриця, карта здоров'я. <b>Розказую:</b> по одному реченню й кнопці «Записатися» на кожен формат. Прогноз на рік іде першим, бо це сезонний запит.</p>
+        <span class="flag">Вартість форматів ще не відома.</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="num">4</div>
+      <div>
+        <h3>Як це проходить</h3>
+        <p>Чотири кроки: запис через месенджер або форму, повна передоплата, голосовий розбір від 40 хвилин (за бажанням з текстовим PDF), додаткові відповіді після прослуховування. <b>Розказую:</b> що клієнт отримує на кожному кроці. Консультація наживо на Google Meet коштує дорожче.</p>
+        <span class="flag">Наталя дозволила показати приклад розбору. Потрібен сам приклад із прибраним іменем і датою народження.</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="num">5</div>
+      <div>
+        <h3>Відгуки</h3>
+        <p>Скриншоти з месенджерів, з іменами авторів. <b>Розказую:</b> з яким питанням людина приходила й що змінилося. Показую відгуки про прогноз і про дитячу матрицю (таланти дитини).</p>
+        <span class="flag">Потрібні самі скриншоти й їхня кількість.</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="num">6</div>
+      <div>
+        <h3>Про Наталю коротко</h3>
+        <p>3 роки практики, понад 100 консультацій, 4 сертифікати. <b>Розказую:</b> як вона прийшла до нумерології, чому саме цей метод і де його межі: матриця не відповідає на «коли я вийду заміж» чи «звільнятися з роботи чи ні». Карта здоров'я описує, як енергії можуть впливати на самопочуття, і не є медичною діагностикою.</p>
+        <span class="flag">Історію шляху напишу її словами. Формулювання узгодити з Наталею перед публікацією.</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="num">7</div>
+      <div>
+        <h3>Запис і контакти</h3>
+        <p>Один зрозумілий спосіб запису. <b>Розказую:</b> запис через месенджер або форму, повна передоплата, онлайн по Україні, офлайн в Ужгороді за домовленістю. Унизу сторінки Instagram, Threads, TikTok і посилання на юридичні тексти.</p>
+        <span class="flag">Потрібні лінки на соцмережі й месенджер для запису.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="s4">
+  <h2 id="s4"><span class="n">4.</span> Питання до Наталі</h2>
+  <p class="intro">Відповіді Наталі вписано. Помаранчева позначка нижче питання показує, чого ще бракує.</p>
+
+  <div class="q">
+    <h3><span class="qn">1.</span>З якими 3–5 запитами до неї найчастіше приходять і хто ці люди?</h3>
+    <div class="ans"><b>Відповідь Наталі:</b> онлайн, жінки 25–40 років. Є сезонність: перед Новим роком цікавляться прогнозом на наступний рік. Найпоширеніші запити стосуються переїзду й фінансів.</div>
+    <p class="open">Ще відкрито: інші типові запити, якщо є.</p>
+  </div>
+  <div class="q">
+    <h3><span class="qn">2.</span>Чи підходить їй такий акцент: орієнтир на рік і на період для рішень?</h3>
+    <div class="ans"><b>Відповідь Наталі:</b> ще обдумує, лишати заголовок чи змінювати, бо на сайті будуть запропоновані розбори на різні запити.</div>
+    <p class="open">Ще відкрито: остаточне рішення про заголовок і акцент.</p>
+  </div>
+  <div class="q">
+    <h3><span class="qn">3.</span>Що саме вона має на увазі під «прогнозом на період» і які періоди бере?</h3>
+    <div class="ans"><b>Відповідь Наталі:</b> період на рік, починаючи від дати народження.</div>
+    <p class="open">Ще відкрито: чи є прогноз на інші періоди, крім року.</p>
+  </div>
+  <div class="q">
+    <h3><span class="qn">4.</span>Яка тривалість, вартість і результат кожного формату?</h3>
+    <div class="ans"><b>Відповідь Наталі:</b> голосові повідомлення орієнтовною тривалістю від 40 хвилин. За бажанням є текстовий PDF-документ. Після того як клієнт прослухав свій розбір, є додаткові відповіді й роз'яснення.</div>
+    <p class="open">Ще відкрито: вартість, тривалість решти форматів, чи є пакети й повторні консультації.</p>
+  </div>
+  <div class="q">
+    <h3><span class="qn">5.</span>Чи можна показати анонімізований приклад розбору або відповіді на питання?</h3>
+    <div class="ans"><b>Відповідь Наталі:</b> можна показати.</div>
+    <p class="open">Ще відкрито: сам приклад (без імені й дати народження).</p>
+  </div>
+  <div class="q">
+    <h3><span class="qn">6.</span>Скільки є відгуків, у якому вигляді, і чи дали автори згоду на публікацію?</h3>
+    <div class="ans"><b>Відповідь Наталі:</b> відгуки є, це скриншоти з месенджерів. Їх можна показувати не анонімно, з іменем. Є відгуки саме про прогноз і про дитячу матрицю (таланти дитини).</div>
+    <p class="open">Ще відкрито: скільки відгуків і самі скриншоти.</p>
+  </div>
+  <div class="q">
+    <h3><span class="qn">7.</span>Як вона прийшла до нумерології, де навчалася, чи є сертифікати і яким тоном говорить з клієнтами?</h3>
+    <div class="ans"><b>Відповідь Наталі:</b> з початком повномасштабного вторгнення, залишившись без роботи, почала пошук себе, і допомогла нумерологія. Почала цікавитися, дивилася відео нумерологів, захотіла розібратися глибше й знайшла навчання. Розібралася в собі й тепер допомагає іншим. Зараз є 4 сертифікати. Звертання до читача: «Ви». Прізвище Барабаш підходить, це справжнє прізвище.</div>
+    <p class="open">Ще відкрито: де саме навчалася, які ще є фото для сайту.</p>
+  </div>
+  <div class="q">
+    <h3><span class="qn">8.</span>Як зручніше записуватися і де проходять консультації?</h3>
+    <div class="ans"><b>Відповідь Наталі:</b> запис через месенджер або форму. Передоплата повна. Онлайн через Google Meet, консультація наживо дорожча. Офлайн-зустріч в Ужгороді узгоджується за фактом.</div>
+    <p class="open">Ще відкрито: який месенджер, чи приймає в інших містах, що означає «наживо» порівняно з голосовим розбором.</p>
+  </div>
+  <div class="q">
+    <h3><span class="qn">9.</span>Що, на її думку, матриця не може, і як вона описує карту здоров'я?</h3>
+    <div class="ans"><b>Відповідь Наталі:</b> матриця не може приймати рішення за клієнта. Не відповідає на запити на кшталт «коли я вийду заміж», «що мені далі робити», «звільнятися з роботи чи ні», «їхати за кордон чи не їхати», «скільки в мене буде дітей». Карту здоров'я описує так: на психологічному рівні, які енергії можуть впливати на фізичний стан і самопочуття. На сайті показуємо Instagram, Threads, TikTok. Юридичні тексти потрібні.</div>
+    <p class="open">Ще відкрито: хто пише юридичні тексти й посилання на соцмережі.</p>
+  </div>
+</section>
+</main>
+</body>
+</html>
