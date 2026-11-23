@@ -17,9 +17,10 @@ export default function Hero() {
         <Image
           src="/images/hero.jpg"
           alt="Наталя Барабаш за ноутбуком у плетеному кріслі"
-          fill
+          width={1280}
+          height={853}
           priority
-          sizes="70vw"
+          sizes="100vw"
         />
       </div>
 

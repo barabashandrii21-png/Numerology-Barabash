@@ -22,13 +22,20 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
   flex-direction: column;
 }
 
-.hero__photo { position: absolute; inset: 0 0 0 34%; z-index: 0; }
-.hero__photo img { object-fit: cover; object-position: 70% 40%; }
+.hero__photo { position: absolute; inset: 0; z-index: 0; overflow: hidden; }
+.hero__photo img {
+  position: absolute;
+  top: -3.9vw;
+  left: 9.3vw;
+  width: 100.3vw;
+  height: auto;
+  max-width: none;
+}
 .hero__photo::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, var(--navy) 0%, rgba(30, 35, 48, 0.55) 22%, rgba(30, 35, 48, 0) 55%);
+  background: linear-gradient(90deg, var(--navy) 0%, var(--navy) 31%, rgba(30, 35, 48, 0.5) 38%, rgba(30, 35, 48, 0) 52%);
 }
 
 .hero > *:not(.hero__photo) { position: relative; z-index: 1; }
@@ -50,7 +57,7 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 }
 .hero__header nav a:hover { opacity: 1; text-decoration: underline; text-underline-offset: 6px; }
 
-.hero__content { margin: auto 0; padding: 40px 0; max-width: 620px; }
+.hero__content { padding-top: 98px; max-width: 620px; }
 .hero__eyebrow { margin: 0 0 32px; font-size: 16px; letter-spacing: 0.14em; text-transform: uppercase; opacity: 0.85; }
 .hero h1 {
   margin: 0;
@@ -60,7 +67,7 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
   line-height: 1.12;
   text-transform: uppercase;
 }
-.hero__lead { margin: 40px 0 0; max-width: 460px; font-size: 18px; line-height: 1.8; letter-spacing: 0.02em; }
+.hero__lead { margin: 32px 0 0; max-width: 460px; font-size: 18px; line-height: 1.8; letter-spacing: 0.02em; }
 .hero__actions { display: flex; flex-wrap: wrap; gap: 40px 40px; margin-top: 48px; }
 
 .btn {
@@ -81,19 +88,23 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 .hero__formats {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px 40px;
-  max-width: 737px;
+  justify-content: space-between;
+  gap: 12px 40px;
+  width: 737px;
+  max-width: 100%;
+  margin-top: auto;
   padding: 24px 0 32px;
   border-top: 1px solid rgba(246, 243, 238, 0.35);
-  font-size: 17px;
-  letter-spacing: 0.1em;
+  font-size: 16px;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 .hero__formats span { opacity: 0.75; margin-right: 6px; }
 
 @media (max-width: 900px) {
   .hero { padding: 0 24px; }
-  .hero__photo { inset: 0; }
+  .hero__photo img { top: 0; left: auto; right: -30vw; width: auto; height: 100%; }
   .hero__photo::after { background: linear-gradient(180deg, rgba(30,35,48,.75), rgba(30,35,48,.85)); }
   .hero__header nav { display: none; }
   .hero__actions { gap: 16px; }
